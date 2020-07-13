@@ -14,10 +14,15 @@ A Single Precision Floating Point Unit Using SystemVerilog
     3.  Multiplication (Vedic Multiplication)  
     4.  Division (Newton–Raphson division)
 * Floating Point Number to Decimal Number Converter    
-* Note: This design is not optimized. For example, Pre_Normalization 
+* Note: 
+    1.  This design is not optimized. For example, Pre_Normalization 
 and Pre_Normalization_MD can be merged into one, the same idea for 
 Post_Normalization and Post_Normalization_MD. N-th Root will give a 
-slightly different results from the real answer.
+slightly different results from the real answer. 
+    2.  This FPU design does not support Sub-Normal number. If the 
+result after calculated is a Sub-Normal number, then the actual 
+outcome will be underflow or zero.
+
 * Update: The first division algorithm (Non-Restoring Division) described
 in the NRD_Division.sv file is not perfectly correct, the correct one is
 Modified_NRD_Division_CV module in FP2D_Converter.sv file. Thanks!!!
