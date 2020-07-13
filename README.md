@@ -13,7 +13,7 @@ A Single Precision Floating Point Unit Using SystemVerilog
     2.  Subtraction (Carry Select Adder)
     3.  Multiplication (Vedic Multiplication)  
     4.  Division (Newton–Raphson division)
-    
+* Floating Point Number to Decimal Number Converter    
 * Note: This design is not optimized. For example, Pre_Normalization 
 and Pre_Normalization_MD can be merged into one, the same idea for 
 Post_Normalization and Post_Normalization_MD. N-th Root will give a 
