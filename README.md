@@ -9,8 +9,8 @@ A Single Precision Floating Point Unit Using SystemVerilog
     4.  Division (Non-Restoring Division)
     5.  N-th Root (2th-root, 3th-root, 4th-root, 5th-root)
 *   Second Algorithm  
-    1.  Addition (Carry Select Adder)
-    2.  Subtraction (Carry Select Adder)
+    1.  Addition (Carry Lookahead Adder)
+    2.  Subtraction (Carry Lookahead Adder)
     3.  Multiplication (Vedic Multiplication)  
     4.  Division (Newton–Raphson division)
 * Floating Point Number to Decimal Number Converter    
