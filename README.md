@@ -16,13 +16,16 @@ A Single Precision Floating Point Unit Using SystemVerilog
 * Floating Point Number to Decimal Number Converter    
 * Note: 
     1.  This design is not optimized. For example, Pre_Normalization 
-and Pre_Normalization_MD can be merged into one, the same idea for 
-Post_Normalization and Post_Normalization_MD. N-th Root will give a 
-slightly different results from the real answer. 
+    and Pre_Normalization_MD can be merged into one, the same idea for 
+    Post_Normalization and Post_Normalization_MD. N-th Root will give a 
+    slightly different results from the real answer. 
     2.  This FPU design does not support Sub-Normal number. If the 
-result after calculated is a Sub-Normal number, then the actual 
-outcome will be underflow or zero.
-
+    result after calculated is a Sub-Normal number, then the actual 
+    outcome will be underflow or zero.
+    3.  Define SECOND_ALGORITHM in FPU_define.h file to run the secound 
+    algorithm
+    4.  Define SIMULATE in FPU_define.h file to run simulation, clear it 
+    to synthesis.
 * Update: The first division algorithm (Non-Restoring Division) described
 in the NRD_Division.sv file is not perfectly correct, the correct one is
 Modified_NRD_Division_CV module in FP2D_Converter.sv file. Thanks!!!
