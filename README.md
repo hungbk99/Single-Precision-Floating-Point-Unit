@@ -22,7 +22,7 @@ A Single Precision Floating Point Unit Using SystemVerilog
     2.  This FPU design does not support Sub-Normal number. If the 
     result after calculated is a Sub-Normal number, then the actual 
     outcome will be underflow or zero.
-    3.  Define SECOND_ALGORITHM in FPU_define.h file to run the secound 
+    3.  Define SECOND_ALGORITHM in FPU_define.h file to run the second 
     algorithm
     4.  Define SIMULATE in FPU_define.h file to run simulation, clear it 
     to synthesis.
